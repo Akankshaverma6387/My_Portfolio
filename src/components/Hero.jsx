@@ -14,8 +14,8 @@ function Hero(){
                         </div>
                     </div>
                     <div className="col-lg-5 text-center mt-5 mt-lg-0">
-                        <div className="bg-light rounded-circle p-4 d-inline-block">
-                            <img src="\images\gitpic.jpeg" style={{width:"400px", height:"400px",objectFit:"cover",borderRadius:"50%",border:"4px solid white"}}/>
+                        <div className="bg-light rounded-circle d-inline-block hero-image">
+                            <img src="\images\gitpic.jpeg" />
                         </div>
                     </div>
                 </div>

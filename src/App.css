@@ -193,6 +193,11 @@ html,body, #root{
   min-height: 100%;
   background-color: #f5f7fb;
 }
+#root{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 body{
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -211,6 +216,41 @@ body{
 .navbar{
   background-color: #262c32 !important;
 }
+
+/* Hero */
+.hero-image {
+  width: 380px;
+  height: 380px;
+  padding: 0.2px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0d6efd, #00c6ff);
+  position: relative;
+  transition: 0.4s ease;
+  box-shadow: 0 10px 30px rgba(13, 110, 253, 0.2);
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  transition: 0.5s ease;
+}
+.hero-image:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 15px 35px rgba(13, 110, 253, 0.3),
+    0 0 0 8px rgba(13, 110, 253, 0.08);
+}
+
+.hero-image:hover img {
+  transform: scale(1.06);
+}
+
+
+
+/* about */
 
 .about{
   padding: 90px 0;
@@ -287,35 +327,80 @@ body{
   margin-bottom: 55px;
 }
 
+
+/* Achievement Card */
+
 .achievement-card {
-  min-height: 240px;
+  height: 100%;
   padding: 25px;
-  background: white;
-  border-radius: 14px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-  transition: 0.3s;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #eeeeee;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+
+  transition: all 0.3s ease;
 }
+
+
+/* Card Hover */
 
 .achievement-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
+
+/* Heading */
+
 .achievement-card h4 {
-  font-size: 22px;
-  margin-bottom: 18px;
+  font-size: 21px;
+  line-height: 1.4;
+  margin-bottom: 16px;
 }
+
+
+/* Description */
 
 .achievement-card p {
   line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
 }
 
-.certificate {
-  display: inline-block;
+
+/* Image Container */
+
+.achievement-image {
+  width: 100%;
+  height: 220px;
   margin-top: 20px;
-  color: #212529;
-  text-decoration: none;
-  font-weight: 500;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  border-radius: 10px;
+  background: #f5f5f5;
 }
+
+.achievement-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  display: block;
+  cursor: pointer;
+
+  transition: transform 0.4s ease;
+}
+
+.achievement-card:hover .achievement-image img {
+  transform: scale(1.04);
+}
+
 
 /* skills */
 
@@ -485,4 +570,142 @@ body{
 
 .email-icon{
   color: #ea4335;
+}
+.linkedin-icon{
+  color: #0a66c2;
+}
+
+
+
+/* Projects */
+
+.projects-section {
+  padding: 70px 0;
+  background: #f8f9fa;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-heading h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.section-heading p {
+  color: #6c757d;
+}
+
+/* Cards */
+
+.project-card {
+  padding: 25px;
+  height: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.07);
+  transition: .3s;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,.12);
+}
+
+.project-icon {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.project-description {
+  color: #6c757d;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Technologies */
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 18px 0;
+}
+
+.tech-stack span {
+  padding: 5px 10px;
+  background: #f1f3f5;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+/* Buttons */
+
+.project-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.project-btn {
+  flex: 1;
+  padding: 8px;
+  text-align: center;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 13px;
+  transition: .3s;
+}
+
+.github-btn {
+  background: #0d6efd;
+  color: white;
+}
+
+.demo-btn {
+  border: 1px solid #212529;
+  color: #212529;
+}
+
+.github-btn:hover,
+.demo-btn:hover {
+  background: #0d6efd;
+  border-color: #0d6efd;
+  color: white;
+}
+
+/* footer */
+
+.footer {
+  margin-top: auto;
+  padding: 18px;
+  background: #262c32;
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-links {
+  margin-top: 8px;
+}
+
+.footer-links a {
+  color: #adb5bd;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  color: white;
 }

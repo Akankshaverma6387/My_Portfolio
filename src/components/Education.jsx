@@ -44,7 +44,7 @@ const Education = () => {
                 </p>
 
                 <p className="mb-3">
-                  Percentage: <strong>96.5%</strong>
+                  Percentage: <strong>96.4%</strong>
                 </p>
                 <p className="mb-0">
                   <b>Physics, Chemistry & Mathematics</b>
