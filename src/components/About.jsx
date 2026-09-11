@@ -1,6 +1,6 @@
 function About() {
   return (
-    <section className="about" id="about">
+    <section className="min-vh-100 d-flex align-items-center" id="about">
       <div className="container">
 
         {/* Section Heading */}

@@ -1,7 +1,7 @@
 function Skills() {
   return (
     <section className="skills" id="skills">
-      <h2>Skills</h2>
+      <h2 className="mt-5"><b>Skills</b></h2>
 
       <p className="skills-text">
         Technologies and tools I use to build responsive and user-friendly

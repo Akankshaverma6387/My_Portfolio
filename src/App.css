@@ -274,59 +274,50 @@ body{
   }
 }
 
+/* achievements */
 
 #achievements {
-  padding: 60px 6%;
-  background: #262c32;
-  color: #fff;
-}
-
-#achievements .max-w-5xl {
-  max-width: 1200px;
-  margin: auto;
+  min-height: 100vh;
+  padding: 90px 0;
+  background: #f8f9fa;
 }
 
 #achievements h2 {
-  font-size: 36px;
-  margin-bottom: 25px;
+  font-size: 38px;
+  margin-bottom: 55px;
 }
 
-#achievements .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-#achievements .rounded-xl {
-  padding: 24px;
-  background: #262c32;
-  border: 1px solid #444;
+.achievement-card {
+  min-height: 240px;
+  padding: 25px;
+  background: white;
   border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
 }
 
-#achievements h3 {
+.achievement-card:hover {
+  transform: translateY(-5px);
+}
+
+.achievement-card h4 {
   font-size: 22px;
-  margin: 0 0 18px;
+  margin-bottom: 18px;
 }
 
-#achievements p {
-  color: #aaa;
-  line-height: 1.7;
-  margin: 0;
+.achievement-card p {
+  line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-  #achievements .grid {
-    grid-template-columns: 1fr;
-  }
+.certificate {
+  display: inline-block;
+  margin-top: 20px;
+  color: #212529;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-#achievements .rounded-xl:hover {
-  transform: translateY(-8px) scale(1.02);
-  border-color: #fff;
-  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.15);
-}
-
+/* skills */
 
 .skills {
   padding: 60px ;
@@ -421,6 +412,77 @@ body{
   color: #f05032;
 }
 
-/* .fa-github {
-  color: #ffffff;
-} */
+/* education */
+#education {
+  min-height: 100vh;
+  padding: 90px 0;
+  background: #f8f9fa;
+}
+
+#education h2 {
+  font-size: 38px;
+  margin-bottom: 55px;
+}
+
+#education .card {
+  min-height: 280px;
+  border-radius: 14px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+#education .card:hover {
+  transform: translateY(-5px);
+}
+
+/* contact */
+
+#contact {
+  min-height: 100vh;
+  padding: 90px 0;
+  background: #f8f9fa;
+}
+
+#contact h2 {
+  font-size: 38px;
+}
+
+.subtitle {
+  color: #666;
+}
+
+.contact-box {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #212529;
+  background: white;
+  padding: 35px 25px;
+  min-height: 220px;
+  border-radius: 15px;
+  border: 1px solid #eee;
+  box-shadow: 0 3px 10px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.contact-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.contact-icon {
+  font-size: 40px;
+  margin-bottom: 18px;
+}
+
+.contact-box h4 {
+  margin-bottom: 12px;
+}
+
+.contact-box p {
+  color: #666;
+}
+
+.email-icon{
+  color: #ea4335;
+}
